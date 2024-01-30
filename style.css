@@ -28,6 +28,15 @@ body {
     border-radius: 5px;
   }
   
+  .calculate {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor de apontar */
+  }
+
   .answer p {
     font-size: 16px;
     color: #333;
