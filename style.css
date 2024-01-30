@@ -1,45 +1,74 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .calculator {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .question h2,
-  .answer h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .calculate {
-    padding: 10px 20px;
-    background-color: #4CAF50; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    border: none; /* Sem borda */
-    border-radius: 5px; /* Borda arredondada */
-    cursor: pointer; /* Cursor de apontar */
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
 
-  .answer p {
-    font-size: 16px;
-    color: #333;
-    line-height: 1.6;
-  }
-  
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  padding: 20px;
+  margin-bottom: 8px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-content {
+  margin-bottom: 5px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.form label {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.send {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.answer p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.form a {
+  position: relative;
+  bottom: -90px;
+}
+
+.form-content.error input{
+  border-color: red;
+}
+
+.form-content.error a{
+  color: red;
+}
