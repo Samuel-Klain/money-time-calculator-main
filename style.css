@@ -7,7 +7,7 @@ body {
 
 .container {
   max-width: 600px;
-  margin: 50px auto;
+  margin: 200px auto;
   padding: 20px;
   background-color: #fff;
   border-radius: 15px;
@@ -18,12 +18,6 @@ body {
   padding: 20px;
   margin-bottom: 8px;
   padding-bottom: 20px;
-  position: relative;
-}
-
-.form-content {
-  margin-bottom: 5px;
-  padding-bottom: 15px;
   position: relative;
 }
 
@@ -54,21 +48,28 @@ body {
   cursor: pointer;
 }
 
-.answer p {
-  font-size: 16px;
-  color: #333;
-  line-height: 1.6;
+.send:hover {
+  background-color: #45a049;
 }
 
-.form a {
-  position: relative;
-  bottom: -90px;
+p {
+  display: none;
+  padding: 10px 20px;
+  background-color: #95ad96;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  width:fit-content;
+  font-size: 20px;
 }
 
-.form-content.error input{
-  border-color: red;
-}
-
-.form-content.error a{
-  color: red;
+#resultado {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  font-weight: bold;
 }

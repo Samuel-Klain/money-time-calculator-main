@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <title>Document</title>
+    <title>Calculate</title>
 </head>
 
 <body>
@@ -18,37 +18,27 @@
     <div class="container">
         <section>
             <h1 class="header"> How much does your time cost ?</h1>
-        </section>
+        </section> <!--Title-->
 
         <form id="form" class="form">
-            <div class="form-content">
-                <label for="username">Write your name</label>
-                <input type="text" id="username" placeholder="Write your answer here">
-            </div>
 
-            
-            <div class="form-content">
-                <label for="salary">Enter your monthly salary</label>
-                <input type="text" id="salary" placeholder="Write your answer here">
-            </div>
+            <label for="inputName">Write your name</label>
+            <input type="text" id="inputName" placeholder="Write your answer here">
 
-            <div class="form-content">
-                <label for="time">Enter your daily working time</label>
-                <input type="text" id="time" placeholder="Write your answer here">
-                
-            </div> <!-- Title and field of questions-->
+            <label for="inputSalary">Enter your monthly salary</label>
+            <input type="number" id="inputSalary" placeholder="Write your salary here">
 
-            <div class="form-content error">
-                <label for="result">Your time cost:</label>
-                <input type="" id="result" placeholder="Your time cost:">
-                <a class="error">Aqui vai a mensagem de erro </a>
-                
-            </div> <!-- field of answers-->
+            <label for="inputTime">Enter your daily working time</label>
+            <input type="number" id="inputTime" placeholder="Write your daily time here">
 
-            <button type="submit" class="send">Calculate</button>
+        </form>
 
-        </form> <!-- Form of questions-->
+        <button onclick="salaryCalc()" id="calculate" class="send">Calculate</button>
+        <p id="result"></p> <!--Button Calculate-->
+
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
