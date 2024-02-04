@@ -1,26 +1,30 @@
 function salaryCalc() {
-    // Obter os valores digitados pelo usuário
+
+    //data collect
     var inputNameElement = document.getElementById("inputName");
     var inputSalaryElement = document.getElementById("inputSalary");
     var inputTimeElement = document.getElementById("inputTime");
+    var inputDayElement = document.getElementById("inputDay");
 
+    // data formact
     var name = inputNameElement.value;
-    var salary = inputSalaryElement.value;
-    var time = inputTimeElement.value;
+    var salary = parseFloat(inputSalaryElement.value);
+    var time = parseFloat(inputTimeElement.value);
+    var daily = parseFloat(inputDayElement.value);
 
-    // Verificar se os valores são válidos
-    if (salary === "" || isNaN(salary) || time === "" || isNaN(time)) {
-        alert("Please, wriew valid values for salary and daily time");
+    // Error message
+    if (isNaN(salary) || isNaN(time) || isNaN(daily) || salary <= 0 || time <= 0 || daily <= 0) {
+        alert("Please, write valid values for salary, daily time, and time.");
         return;
     }
 
-    // Calcular o salário total
-    var salaryTotal = salary * time;
+    //find out how much you earn per hour
+    var hourMonth = salary / daily;
 
-    // Exibir o resultado na tela
+    var timeValue = time / hourMonth;
+
     var resultElement = document.getElementById("result");
-    resultElement.innerHTML = name + " your time cost: " + salaryTotal;
-    
-    // Exibir o campo de resultado
+    resultElement.innerHTML = name + " this product is worth: " + timeValue.toFixed(1) + " hours of you time ";
+
     resultElement.style.display = "block";
 }
